@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+int list();
+int Total Amount=1000, Amount,Amo,Total deposit=0,Total Withdraw=0,Total Tr=0,Tr;
+void main ()
+{
+clrscr();
+list();
+getch();
+}
+int list()
+}
+int ch;
+printf ("\n1: Deposit amount:");
+printf ("\n2: Withdraw amount:");
+printf ("\n3:Transfer amount:");
+printf ("\n4:Check detail:");
+printf ("\n5:Exit:");
+printf("\n Enter your choice:");
+scanf ("%d", &ch);
+return (ch);
+}
+void deposit ()
+{
+printf ("\n Enter the amount you want to deposit");
+scanf("%d",& Amount);
+Total Amount+=Amount;
+}
+void withdraw()
+{
+printf ("\n Enter the Amount you wish to withdraw");
+scanf("%d",&Amo);
+if(Amo<=Total Amount)
+Total Amount-=Amo;
+else
+printf ("\n Less amount Withdraw is not possible");
+}
+void transfer ()
+{
+printf ("\n Enter the amount you want to transfer");
+scanf("%d",&Tr);
+if(Tr<=Total Amount)
+Total Amount-=Tr;
+else
+printf ("\n Less amount Transfer is not possible");
+}
+void Check detail ()
+{
+printf ("\n Total Amount %d",Total Amount);
+printf ("\n Total deposited amount%d",Total deposit);
+printf ("\n Total withdraw %d",Total withdraw);
+printf ("\n Total transferred amount%d",Total Tr);
+}
